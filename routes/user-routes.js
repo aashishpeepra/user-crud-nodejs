@@ -8,7 +8,7 @@ router.post("/login", userControllers.login);
 
 router.post("/signup", userControllers.signup);
 
-router.post("/forget_password", userControllers.postResetData);
+router.post("/reset_password", userControllers.postResetData);
 
 router.post("/new_password", userControllers.createNewPassword);
 
