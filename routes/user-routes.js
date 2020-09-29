@@ -11,16 +11,24 @@ router.post(
   "/signup",
   [
     check("name").isLength({ min: 3, max: 20 }),
-    check("email").normalizeEmail().isEmail(),
+    check("email").isEmail(),
     check("password").isLength({ min: 8 }),
-    check("github").isLength({min:3}),
-    check("role").notEmpty()
+    check("github").isLength({ min: 3 }),
+    check("role").notEmpty(),
   ],
   userControllers.signup
 );
 
-router.post("/reset_password", userControllers.postResetData);
+router.post(
+  "/resetpassword",
+  [check("email").isEmail()],
+  userControllers.postResetData
+);
 
-router.post("/new_password", userControllers.createNewPassword);
+router.post(
+  "/newpassword/:id",
+  check("password").isLength({ min: 8 }),
+  userControllers.createNewPassword
+);
 
 module.exports = router;

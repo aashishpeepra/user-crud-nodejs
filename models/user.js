@@ -30,7 +30,7 @@ const userSchema = new Schema({
   },
   resetToken: {
     type: String,
-    default: undefined,
+  
   },
   resetTokenExpiryDate: {
     type: Date,

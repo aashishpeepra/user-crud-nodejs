@@ -3,6 +3,8 @@
         "DB_USER": "ironprogrammer",
         "DB_PASSWORD": "DQWFF551QIFnFNmF",
         "DB_NAME": "USER_DATA",
-        "ROUNDS":13
+        "ROUNDS":13,
+        "API_KEY":"6399378159bd3df428c00094ebc34371-aff2d1b9-a6e30419",
+        "DOMAIN":"sandboxcdfdfb48ad9c467385bfb5b1d4d558fb.mailgun.org"
     }
 }
