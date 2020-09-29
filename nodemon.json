@@ -1,0 +1,7 @@
+{
+    "env": {
+        "DB_USER": "ironprogrammers",
+        "DB_PASSWORD": "Cj9HSQ9IkLwKckFs",
+        "DB_NAME": "USER_DATA",
+    }
+}
